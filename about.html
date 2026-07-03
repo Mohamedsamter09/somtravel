@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Somali Venture Travel</title>
+    
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body { 
+            background-color: #f4f4f4; 
+            color: #333333; 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+        }
+
+        header { 
+            background-color: #008080; 
+            padding: 20px; 
+        }
+
+        .nav-container { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            max-width: 1100px; 
+            margin: 0 auto; 
+        }
+
+        .logo h2 { 
+            color: #ffffff; 
+            margin: 0; 
+        }
+
+        nav ul { 
+            display: flex; 
+            list-style: none; 
+            margin: 0; 
+            padding: 0; 
+            gap: 15px; 
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: all 0.4s ease;
+            display: inline-block;
+        }
+
+        nav ul li a.active { 
+            color: #d4af37; 
+        }
+
+        nav ul li a:hover {
+            background-color: #d4af37;
+            color: #222;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+        }
+
+        .container { 
+            max-width: 1100px; 
+            margin: 30px auto; 
+            padding: 0 20px; 
+        }
+
+        .section-title { 
+            text-align: center; 
+            color: #008080; 
+            margin-bottom: 30px; 
+        }
+
+        .about-text {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 40px auto;
+            line-height: 1.8;
+            font-size: 1.05rem;
+            color: #555555;
+        }
+
+        .mission-section {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            border-left: 5px solid #008080;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .mission-section h3 {
+            color: #008080;
+            margin-top: 0;
+        }
+
+        .team-flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .student-box {
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+            padding: 20px;
+            border-radius: 8px;
+            width: 260px;
+            text-align: center;
+        }
+
+        .student-box img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #008080;
+            margin-bottom: 10px;
+            background-color: #cccccc;
+        }
+
+        footer { 
+            background-color: #222222; 
+            color: #ffffff; 
+            text-align: center; 
+            padding: 15px; 
+            margin-top: 40px; 
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+
+            nav ul {
+                flex-direction: column;
+                width: 100%;
+                gap: 10px;
+            }
+
+            nav ul li {
+                width: 100%;
+            }
+
+            nav ul li a {
+                display: block;
+                text-align: center;
+                padding: 12px;
+            }
+
+            .student-box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo"><h2>Somali Venture</h2></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Destinations</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="booking.html">Book Now</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title">About Our Agency</h2>
+        <p class="about-text">
+            Somali Venture Travel is a leading professional travel agency dedicated to showcasing the beauty, culture, and natural wonders of Somalia to travelers from around the world. We provide carefully curated travel experiences that combine adventure, cultural immersion, and historical exploration.
+        </p>
+
+        <div class="mission-section">
+            <h3>Our Mission</h3>
+            <p>To provide safe, memorable, and authentic travel experiences that help visitors discover Somalia's rich heritage, stunning landscapes, and vibrant culture while supporting local communities.</p>
+        </div>
+
+        <h2 class="section-title">Why Choose Somali Venture?</h2>
+        <div class="mission-section">
+            <p><strong>✓ Expert Local Guides:</strong> Our experienced guides have deep knowledge of Somalia's history and destinations<br>
+            <strong>✓ Safety First:</strong> We prioritize traveler safety and security throughout all journeys<br>
+            <strong>✓ Competitive Pricing:</strong> Affordable packages without compromising on quality<br>
+            <strong>✓ Personalized Service:</strong> Customized itineraries tailored to your interests</p>
+        </div>
+
+        <h2 class="section-title">Development Team</h2>
+        <div class="team-flex">
+            <div class="student-box">
+                <img src="student1.jpg" alt="MOHAMED MUHIDIN WASUGE">
+                <h3>MOHAMED MUHIDIN WASUGE</h3>
+                <p><strong>ID:</strong>C6250087</p>
+                <p style="color: #008080; font-weight: bold;">HTML Structure Developer</p>
+            </div>
+
+            <div class="student-box">
+                <img src="student2.jpg" alt="MOHAMED HASSAN ABDI">
+                <h3>MOHAMED HASSAN ABDI</h3>
+                <p><strong>ID:</strong>C6250154</p>
+                <p style="color: #008080; font-weight: bold;">CSS Layout Designer</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Somali Venture Travel Agency. Developed for JUST.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now | Somali Venture Travel</title>
+    
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body { 
+            background-color: #f4f4f4; 
+            color: #333333; 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+        }
+
+        header { 
+            background-color: #008080; 
+            padding: 20px; 
+        }
+
+        .nav-container { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            max-width: 1100px; 
+            margin: 0 auto; 
+        }
+
+        .logo h2 { 
+            color: #ffffff; 
+            margin: 0; 
+        }
+
+        nav ul { 
+            display: flex; 
+            list-style: none; 
+            margin: 0; 
+            padding: 0; 
+            gap: 15px; 
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: all 0.4s ease;
+            display: inline-block;
+        }
+
+        nav ul li a.active { 
+            color: #d4af37; 
+        }
+
+        nav ul li a:hover {
+            background-color: #d4af37;
+            color: #222;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+        }
+
+        .container { 
+            max-width: 1100px; 
+            margin: 30px auto; 
+            padding: 0 20px; 
+        }
+
+        .section-title { 
+            text-align: center; 
+            color: #008080; 
+            margin-bottom: 30px; 
+        }
+
+        .form-box {
+            background-color: #ffffff;
+            padding: 30px;
+            max-width: 500px;
+            margin: 0 auto;
+            border: 1px solid #dddddd;
+            border-radius: 8px;
+            width: 100%;
+        }
+
+        fieldset {
+            border: 1px solid #cccccc;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #008080;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .input-group input, .input-group select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+        }
+
+        .submit-btn {
+            background-color: #008080;
+            color: #ffffff;
+            padding: 12px;
+            width: 100%;
+            border: none;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #005757;
+        }
+
+        footer { 
+            background-color: #222222; 
+            color: #ffffff; 
+            text-align: center; 
+            padding: 15px; 
+            margin-top: 40px; 
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+
+            nav ul {
+                flex-direction: column;
+                width: 100%;
+                gap: 10px;
+            }
+
+            nav ul li {
+                width: 100%;
+            }
+
+            nav ul li a {
+                display: block;
+                text-align: center;
+                padding: 12px;
+            }
+
+            .form-box {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo"><h2>Somali Venture</h2></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Destinations</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="booking.html" class="active">Book Now</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title">Book Your Trip Online</h2>
+        
+        <div class="form-box">
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Contact Info</legend>
+                    <div class="input-group">
+                        <label for="name">Your Full Name:</label>
+                        <input type="text" id="name" required placeholder="E.g., Ahmed Ali">
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" required placeholder="name@example.com">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Trip Preferences</legend>
+                    <div class="input-group">
+                        <label for="package">Choose Package:</label>
+                        <select id="package" required>
+                            <option value="">-- Click to Select --</option>
+                            <option value="culture">Culture Trip - $350</option>
+                            <option value="beach">Beach Stay - $500</option>
+                            <option value="adventure">Adventure Trip - $1200</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="submit-btn">Send My Booking</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Somali Venture Travel Agency. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
